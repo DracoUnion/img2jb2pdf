@@ -188,7 +188,7 @@ def img2jb2pdf(imgs, bw_thres=128):
             pass
         elif callable(getattr(img, 'read', None)):
             imgs[i] = img.read()
-        elif:
+        else:
             raise ValueError('param must be str, bytes or file')
         
     tmpdir = path.join(tempfile.gettempdir(), uuid.uuid4().hex)
