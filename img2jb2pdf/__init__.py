@@ -19,6 +19,7 @@ import shutil
 
 file = open
 dpi = 72
+DIR = path.dirname(path.abspath(__file__))
 
 class Ref:
     def __init__(self, x):
