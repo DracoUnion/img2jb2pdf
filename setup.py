@@ -30,7 +30,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Topic :: Software Development :: Documentation",
-        "Scientific/Engineering :: Image Processing",
+        "Topic :: Scientific/Engineering :: Image Processing",
         "Topic :: Utilities",
     ],
     description="将二值图像转换为 JBIG2Decode 编码的 PDF",
