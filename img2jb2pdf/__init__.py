@@ -1,21 +1,13 @@
-#!/usr/bin/python
-# Copyright 2006 Google Inc.
-# Author: agl@imperialviolet.org (Adam Langley)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-# JBIG2 Encoder
-# https://github.com/agl/jbig2enc
+"""BookerAutoVideo
+https://github.com/DracoUnion/img2jb2pdf"""
+
+__author__ = "wizardforcel"
+__email__ = "wizard.z@qq.com"
+__license__ = "SATA"
+__version__ = "2023.7.22.0"
 
 import sys
 import re
@@ -26,11 +18,6 @@ from os import path
 import shutil
 
 file = open
-# This is a very simple script to make a PDF file out of the output of a
-# multipage symbol compression.
-# Run ./jbig2 -s -p <other options> image1.jpeg image1.jpeg ...
-# python pdf.py output > out.pdf
-
 dpi = 72
 
 class Ref:
