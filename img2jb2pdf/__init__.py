@@ -198,13 +198,13 @@ def img2jb2pdf(imgs, bw_thres=128):
     safe_mkdir(tmpdir)
     pref = uuid.uuid4().hex
     # 避免命令行过长
-    l = len(str(len(fnames)))
-    nfnames = [
+    l = len(str(len(imgs)))
+    fnames = [
         path.join(tmpdir, str(i).zfill(l) + '.png')
-        for i in range(len(fnames))
+        for i in range(len(imgs))
     ]
-    for f, nf in zip(fnames, nfnames):
-        shutil.copy(f, nf)
+    for img, f in zip(imgs, fnames):
+        open(f, 'wb').write(img)
     cmd = [
         asset('jbig2enc'), 
         '-s', '-p', 
