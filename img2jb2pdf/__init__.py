@@ -16,6 +16,9 @@ import os
 import shutil
 from os import path
 import shutil
+import subprocess as subp
+import tempfile
+import uuid
 
 file = open
 dpi = 72
